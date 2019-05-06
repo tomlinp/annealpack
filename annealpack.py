@@ -5,12 +5,6 @@ import sys
 import annealing
 import svg
 
-#maxattempts
-#Tmax = 25000.0  # Max (starting) temperature
-#Tmin = 2.5      # Min (ending) temperature
-#steps = 50000   # Number of iterations
-#updates = 100   # Number of updates (by default an update prints to stdout)
-
 @click.command(context_settings={"ignore_unknown_options": True})
 @click.option('-x', '--xbound', default=10.0, type=float, help="Size of canvas in x-dimension.  Defaults to 10.")
 @click.option('-y', '--ybound', default=10.0, type=float, help="Size of canvas in y-dimension.  Defaults to 10.")
