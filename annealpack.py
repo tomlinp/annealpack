@@ -49,7 +49,7 @@ def cli(infile, outfile, xbound, ybound, load_initial, maxattempts, save, scale,
     scale = {'coheaseion':scale[0], 'sink':scale[1], 'number':scale[2]}
 
     # perform simulated annealing
-    a = annealing.packingSAN(state, bounds, tile, scale, maxattempts)
+    a = annealing.packingSAN(state, bounds, tile, maxattempts, scale)
     a.Tmax = tmax
     a.Tmin = tmin
     a.steps = steps
