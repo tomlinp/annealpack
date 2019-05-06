@@ -38,7 +38,7 @@ class packingSAN(Annealer):
         attempt = 1
         candidate = placeTile(self.tile, self.bounds)
         while not self.canvas.contains(candidate):
-            if attempts > self.maxattempts:
+            if attempt > self.maxattempts:
                 raise Exception(f'Could not place tile within bounds in {maxattempts} attempts. (xbound = {xbound}, ybound = {ybound})')
             candidate = placeTile(self.tile, self.bounds)
             attempt+=1
