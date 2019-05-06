@@ -26,7 +26,7 @@ def makeTile(points):
 
 class packingSAN(Annealer):
 
-    def __init__(self, state, bounds, tile, scale={}, maxattempts):
+    def __init__(self, state, bounds, tile, maxattempts, scale={}):
         self.bounds = bounds
         self.canvas = geometry.Polygon([(0,0), (0,self.bounds['y']), (self.bounds['x'], self.bounds['y']), (self.bounds['x'], 0)])
         self.tile = tile
