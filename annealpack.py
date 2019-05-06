@@ -53,7 +53,7 @@ def cli(infile, outfile, xbound, ybound, load_initial, maxattempts, save, scale,
     a.Tmax = tmax
     a.Tmin = tmin
     a.steps = steps
-    a.upsates = updates
+    a.updates = updates
     packing, energy = a.anneal()
 
     # write out result as csv
