@@ -21,7 +21,7 @@ import svg
 @click.option('--tmax', default=25000.0, type=float, help="Max (starting) temperature of annealer")
 @click.option('--tmin', default=2.5, type=float, help="Min (ending) temperature of annealer")
 @click.option('--steps', default=50000, type=int, help="Number of iterations for annealer")
-@click.option('--updates', defaule=100, type=int, help="Number of updates for annealer (by default an update prints to stdout)")
+@click.option('--updates', default=100, type=int, help="Number of updates for annealer (by default an update prints to stdout)")
 @click.argument('infile', type=click.Path(exists=True))
 @click.argument('outfile', type=click.Path())
 def cli(infile, outfile, xbound, ybound, load_initial, maxattempts, save, scale, tmax, tmin,steps, updates):
