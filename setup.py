@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name='annealpack',
     version='0.1',
-    py_modules=['annealpack'],
+    py_modules=['annealpack', 'annealing', 'svg'],
     install_requires=[
         'Click',
         'shapely',
